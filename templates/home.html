@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: green;
+            margin: 20% 0 0 40%;
+        }
+        h1{
+            width: 500px;
+            height: 100px;
+            font-size: 50px;
+            font-style: italic;
+            animation-name: jump;
+        }
+        span{
+            background-color: ghostwhite;
+            border-radius: 50%;
+            padding: 5px;
+            position: relative;
+            animation-name: jump;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        span:nth-child(1){
+            color: violet;
+            animation-delay: 1s;
+        }
+        span:nth-child(2){
+            color: indigo;
+            animation-delay: 2s;
+        }
+        span:nth-child(3){
+            color: blue;
+            animation-delay: 3s;
+        }
+        span:nth-child(4){
+            color: orange;
+            animation-delay: 4s;
+        }
+        span:nth-child(5){
+            color: yellow;
+            animation-delay: 5s;
+        }
+        span:nth-child(6){
+            color: red;
+            animation-delay: 6s;
+        }
+        @keyframes jump{
+            from{
+                filter: hue-rotate(0);
+                bottom: 0;
+                transform: scale(1,1);
+            }
+            to{
+                filter: hue-rotate(360deg);
+                bottom: 100px;
+                transform: scale(2,2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span>A</span>
+        <span>B</span>
+        <span>B</span>
+        <span>U</span>
+        <span>L</span>
+        <span>U</span>
+    </h1>
+</body>
+</html>
